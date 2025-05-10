@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light & Dark Mode | Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="theme-switch-container">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fa-solid fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+    <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <div class="title-group">
+            <h1>SauceCode Man</h1>
+            <h2>Programming & Website Development</h2>
+        </div>
+    </section>
+    <section id="project">
+        <h1>My project</h1>
+        <div class="project-container">
+            <div class="image-container">
+                <h2>Website Development</h2>
+                <img src="Image/undraw_web-developer_light.svg" id="image-1">
+            </div>
+            <div class="image-container">
+                <h2>Game Development</h2>
+                <img src="Image/undraw_video-games_light.svg" id="image-2">
+            </div>
+            <div class="image-container">
+                <h2>Freelance</h2>
+                <img src="Image/undraw_freelancer_light.svg" id="image-3">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="social-icon">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

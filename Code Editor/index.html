@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <label>Html</label>
+            <textarea id="html" onkeyup="displayResult()"></textarea>
+            <label>Css</label>
+            <textarea id="css" onkeyup="displayResult()"></textarea>
+            <label>Javascript</label>
+            <textarea id="js" onkeyup="displayResult()"></textarea>
+        </div>
+        <div class="output">
+            <label>Result : </label>
+            <iframe id="result"></iframe>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

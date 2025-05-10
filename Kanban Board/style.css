@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+:root {
+    --category-1: #ff7300;
+    --category-2: #00cfcf;
+    --category-3: #00be00;
+    --category-4: #c51000;
+}
+
+* {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg');
+    background-size: cover;
+    background-position: 50% 60%;
+    background-attachment: fixed;
+    color: white;
+    overflow-y: hidden;
+}
+
+h1 {
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.drag-container {
+    margin: 20px;
+}
+
+.drag-list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.drag-column {
+    flex: 1;
+    margin: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    overflow-x: hidden;
+}
+
+.header h1 {
+    font-size: 1.25rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.backlog-column .header {
+    background-color: var(--category-1);
+}
+
+.progress-column .header {
+    background-color: var(--category-2);
+}
+
+.complete-column .header {
+    background-color: var(--category-3);
+}
+
+.reject-column .header {
+    background-color: var(--category-4);
+}
+
+.custom-scroll {
+    overflow-y: auto;
+    max-height: 52vh;
+}
+
+.drag-item-list {
+    min-height: 50px;
+}
+
+.drag-item {
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    line-height: 1.5rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+}

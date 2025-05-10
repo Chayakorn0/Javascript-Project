@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Image/Logo.jpeg">
+        </div>
+        <ul>
+            <li><a href="#">หน้าเเรก</a></li>
+            <li><a href="#">เกี่ยวกับ</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>SauceCodeMan.com</h1>
+        <p>เรียนรู้การพัฒนาเว็บไซต์เเละเอไอ</p>
+        <button class="create-account" id="open">สร้างบัญชี</button>
+    </header>
+    <div class="container">
+        <h2>Web Development</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam et itaque eius suscipit voluptatum obcaecati quis, vel iste libero soluta, distinctio, nisi mollitia provident quos temporibus accusantium ut perspiciatis nesciunt!</p>
+        <h2>AI Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sit incidunt totam minima itaque temporibus illum, corporis aliquid labore praesentium? Dolorum sit atque, delectus voluptate corrupti molestias fugiat nostrum facilis.</p>
+    </div>
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <div class="modal-header">
+                <h3>สร้างบัญชี</h3>
+            </div>
+            <div class="modal-content">
+                <p>แบบฟอร์มสร้างบัญชี</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="">ชื่อผู้ใช้</label>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div>
+                        <label for="">อีเมล</label>
+                        <input type="email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="">รหัสผ่าน</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <input type="submit" class="submit-btn" value="บันทึก">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

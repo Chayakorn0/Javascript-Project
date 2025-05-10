@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #dddddd;
+}
+
+.container {
+    background: url(Image/Naming.jpg);
+    width: 400px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 6px 10px 8px rgba(0, 0, 0, 0.4);
+}
+
+i {
+    position: absolute;
+    font-size: 60px;
+    left: 48%;
+    top: 48%;
+    opacity: 0;   
+}

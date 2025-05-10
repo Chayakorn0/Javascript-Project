@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Taviraj", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+}
+
+.container {
+    position: relative;
+    height: 160px;
+    max-width: 560px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    resize: none;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+.limit {
+    position: absolute;
+    right: 45px;
+    bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.active {
+    color: red;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.calculator {
+    background: white;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+}
+
+.calculator-display {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px 10px 0 0;
+}
+
+.calculator-display h1 {
+    margin: 0;
+    font-size: 45px;
+    padding: 25px;
+    font-weight: 300;
+    overflow-x: auto;
+}
+
+.calculator-button {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.equal {
+    grid-column: -2;
+    grid-row: 2/span 4;
+}
+
+button {
+    min-height: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(199, 199, 199);
+}
+
+button:hover {
+    filter: brightness(120%);   
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.operator , .equal {
+    background-color: orange;
+    color: white;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .calculator {
+        width: 95%;
+    }
+}
